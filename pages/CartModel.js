@@ -9,7 +9,6 @@ exports.CartModel = class CartModel{
         this.setDeleteProductButtonLocator = page.locator("[id='cartProductActions0']");
         this.deleteProductButtonLocator = page.locator("#cartProductActions0 > ul > li:nth-child(1) > rz-trash-icon > button");
     }
-
     async checkNameTV(){
         await expect (this.checkTVButtonLocator).toHaveText("Планшет Lenovo Tab M10 HD (2nd Gen) Wi-Fi 3/32GB Iron Grey (ZA6W0250UA)");
     }

@@ -45,7 +45,6 @@ exports.SearchPage = class SearchPage{
     async checkCheapElementOfTV(){
         await expect(this.cheapElementOfTVLocator.nth(1)).toContainText("9 999₴");
     }
-
     async checkExpensiveElementOfTV(){
         await expect(this.expensiveElementOfTVLocator.nth(3)).toContainText("12 499₴");
     }
