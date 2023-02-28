@@ -1,5 +1,4 @@
 
-
 exports.HomePage = class HomePage{
     constructor(page){
         this.page = page;
@@ -7,7 +6,6 @@ exports.HomePage = class HomePage{
         this.searchInputLocator = page.locator("[name='search']");
         this.searchButtonLocator = page.locator("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted']");
     }
-
     async navigate(){
         await this.page.goto("https://rozetka.com.ua/");
     }
@@ -19,13 +17,9 @@ exports.HomePage = class HomePage{
     async searchByProduct(value){
         await this.searchInputLocator.fill(value);
     }
+
     async clickSearchByProduct(){
         await this.searchButtonLocator.click();
     }
-
-
-
-
-
 }
 

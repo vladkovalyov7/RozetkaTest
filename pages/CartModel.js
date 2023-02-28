@@ -26,5 +26,4 @@ exports.CartModel = class CartModel{
         await this.setDeleteProductButtonLocator.click();
         await expect(this.deleteProductButtonLocator).toBeVisible();
     }
-
 }

@@ -59,13 +59,6 @@ test.describe("Check main functionality", () => {
 
     test('Test is failed', async({ page }) => {
         await expect(page).toHaveURL("https://rozetka.com.u");
-        await page.screenshot({path: 'screenshotSort.png'});
+        await page.screenshot({path: 'screenshotFailed.png'});
     });
-
-
-
-
-
-
-
 });
